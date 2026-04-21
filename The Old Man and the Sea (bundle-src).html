@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Old Man and the Sea — A Visual Analysis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <template id="__bundler_thumbnail" data-bg-color="#080402">
+    <svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+      <!-- Sky -->
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#6b1a0a"/>
+          <stop offset="60%" stop-color="#e87830"/>
+          <stop offset="100%" stop-color="#fde080"/>
+        </linearGradient>
+        <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#1c5878"/>
+          <stop offset="100%" stop-color="#020c18"/>
+        </linearGradient>
+      </defs>
+      <rect width="1280" height="420" fill="url(#sky)"/>
+      <ellipse cx="460" cy="390" rx="90" ry="90" fill="rgba(255,240,180,0.9)"/>
+      <rect y="390" width="1280" height="330" fill="url(#sea)"/>
+      <!-- Boat silhouette -->
+      <ellipse cx="660" cy="435" rx="100" ry="14" fill="#2a1408"/>
+      <rect x="620" y="400" width="14" height="38" fill="#1a0c04" rx="2"/>
+      <!-- Title -->
+      <text x="640" y="600" font-family="Georgia,serif" font-size="52" font-weight="700" fill="rgba(240,232,216,0.92)" text-anchor="middle">The Old Man and the Sea</text>
+      <text x="640" y="645" font-family="Georgia,serif" font-size="22" fill="rgba(200,180,140,0.65)" text-anchor="middle" font-style="italic">A Visual Analysis in Three Images</text>
+    </svg>
+  </template>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
+    #root { position: absolute; inset: 0; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="music-engine.js"></script>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script type="text/babel" src="animations.jsx"></script>
+  <script type="text/babel" src="old-man-sea-scenes.jsx"></script>
+  <script type="text/babel" src="old-man-sea-main.jsx"></script>
+</body>
+</html>
